@@ -49,7 +49,6 @@ Provided_Portion = 0.25
 #
 # .. your code here ..
 zero = []
-print('First! zero =\n',zero)
 
 #
 # TODO: Loop through the dataset and load up all 50 of the 0_jackson*.wav
@@ -65,6 +64,7 @@ for i in os.listdir("D:/Study/DAT210x-master/Module5/Datasets/free-spoken-digit-
 
  		zero.append(wavfile.read("D:/Study/DAT210x-master/Module5/Datasets/free-spoken-digit-dataset-master/recordings/" + i )[1])
 
+print('First! zero =\n',zero)
 
 # 
 # TODO: Just for a second, convert zero into a DataFrame. When you do
