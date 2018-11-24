@@ -163,7 +163,7 @@ wavfile.write('Original Test Clip.wav', sample_rate, test)
 # should be accomplished using indexing.
 #
 # .. your code here ..
-X_test = test[0:Provided_Portion * n_audio_samples]
+X_test = test[0:int(Provided_Portion * n_audio_samples)]
 print("X_test.shape = \n",X_test.shape)
 #
 # TODO: If the first Provided_Portion * n_audio_samples features were
@@ -174,7 +174,7 @@ print("X_test.shape = \n",X_test.shape)
 #
 # .. your code here ..
 
-y_test = test[Provided_Portion * n_audio_samples:]
+y_test = test[int(Provided_Portion * n_audio_samples):]
 print("y_test.shape = \n",y_test.shape)
 
 # 
